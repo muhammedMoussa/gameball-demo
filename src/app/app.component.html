@@ -1,1 +1,14 @@
-<router-outlet></router-outlet>
+<div class="h-screen border w-screen md:w-full mx-auto flex">
+    <nav class="border w-1/4">
+        <img class="cursor-pointer" [routerLink]="['']" src="" alt="logo">
+        <ul>
+            <li [routerLink]="['/dashboard']" [routerLinkActive]="['text-blue-500']">Dashboard</li>
+            <li [routerLink]="['/game-plan']" [routerLinkActive]="['text-blue-500']">Game Plan</li>
+            <li [routerLink]="['/levels']" [routerLinkActive]="['text-blue-500']">Levels</li>
+        </ul>
+    </nav>
+    
+    <main class="border w-3/4">
+        <router-outlet></router-outlet>
+    </main>
+</div>
