@@ -1,0 +1,15 @@
+.sideNav {
+    background: #f6f6f6;
+    height: 100%;
+}
+
+.sideNav__logo {
+    object-fit: contain;
+    width: 200px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.sideNav ul {
+    /* padding: 50px; */
+}

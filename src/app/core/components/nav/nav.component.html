@@ -1,0 +1,28 @@
+<nav class="sideNav">
+    <img class="sideNav__logo cursor-pointer" [routerLink]="['']" src="/assets/images/logo.png" alt="logo">
+    <ul class="p-10">
+        <li 
+            class="my-6"
+            [routerLink]="['/dashboard']"
+            [routerLinkActive]="['text-blue-500']"
+        >
+            Dashboard
+        </li>
+        
+        <li 
+            class="my-6"
+            [routerLink]="['/game-plan']" 
+            [routerLinkActive]="['text-blue-500']"
+        >
+            Game Plan
+        </li>
+        
+        <li 
+            class="my-6"
+            [routerLink]="['/levels']" 
+            [routerLinkActive]="['text-blue-500']"
+        >
+            Levels
+        </li>
+    </ul>
+</nav>
