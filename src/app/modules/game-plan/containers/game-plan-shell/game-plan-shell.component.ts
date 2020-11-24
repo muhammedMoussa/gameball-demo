@@ -21,7 +21,7 @@ export class GamePlanShellComponent implements OnInit {
     },
   ];
 
-  currentTab = 1;
+  currentTab = 2;
 
   constructor() { }
 

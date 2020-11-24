@@ -8,6 +8,7 @@ import { GpLevelsComponent } from './components/gp-levels/gp-levels.component';
 import { ChallengesComponent } from './components/challenges/challenges.component';
 import { QuestsComponent } from './components/quests/quests.component';
 import { GpTabsComponent } from './components/gp-tabs/gp-tabs.component';
+import { GameCardComponent } from './components/game-card/game-card.component';
 
 const routes: Routes = [
   {
@@ -22,7 +23,7 @@ const routes: Routes = [
     GpLevelsComponent, 
     ChallengesComponent, 
     QuestsComponent, 
-    GpTabsComponent
+    GpTabsComponent, GameCardComponent
   ],
   imports: [
     SharedModule,
