@@ -6,10 +6,29 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./game-plan-shell.component.css']
 })
 export class GamePlanShellComponent implements OnInit {
+  tabs = [
+    {
+      id: 1,
+      label: 'levels',
+    },
+    {
+      id: 2,
+      label: 'challenges',
+    },
+    {
+      id: 3,
+      label: 'quests',
+    },
+  ];
+
+  currentTab = 1;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  setCurrentTab(id: number): void {
+    this.currentTab = id;
+  }
 }

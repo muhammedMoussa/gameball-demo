@@ -1,1 +1,11 @@
-<p>game-plan-shell works!</p>
+<nav class="gp__tabs">
+    <ul>
+        <li *ngFor="let tab of tabs" (click)="setCurrentTab(tab.id)">{{tab.label}}</li>
+    </ul>
+</nav>
+
+<section class="">
+    <gmbl-gp-levels [class.hidden]="currentTab !== 1"></gmbl-gp-levels>
+    <gmbl-challenges [class.hidden]="currentTab !== 2"></gmbl-challenges>
+    <gmbl-quests [class.hidden]="currentTab !== 3"></gmbl-quests>
+</section>
