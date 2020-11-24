@@ -1,12 +1,13 @@
-<p>challenges works!</p>
 <div class="cards__conatiner flex flex-wrap p-4">
-    <gmbl-game-card class="w-full md:w-1/3 p-4"></gmbl-game-card>
-    <gmbl-game-card class="w-full md:w-1/3 p-4"></gmbl-game-card>
-    <gmbl-game-card class="w-full md:w-1/3 p-4"></gmbl-game-card>
-    <gmbl-game-card class="w-full md:w-1/3 p-4"></gmbl-game-card>
-    <gmbl-game-card class="w-full md:w-1/3 p-4"></gmbl-game-card>
-    <gmbl-game-card class="w-full md:w-1/3 p-4"></gmbl-game-card>
-    <gmbl-game-card class="w-full md:w-1/3 p-4"></gmbl-game-card>
-    <gmbl-game-card class="w-full md:w-1/3 p-4"></gmbl-game-card>
-    <gmbl-game-card class="w-full md:w-1/3 p-4"></gmbl-game-card>
+    <gmbl-game-card 
+        *ngFor='let game of games$ | async'
+        [active]="game.active"
+        [title]="game.title"
+        [date]="game.date"
+        [text]="game.text"
+        [points]="game.points"
+        [milestones]="game.milestones"
+        [tag]="game.tag"
+        class="w-full md:w-1/3 p-4"
+    ></gmbl-game-card>
 </div>
