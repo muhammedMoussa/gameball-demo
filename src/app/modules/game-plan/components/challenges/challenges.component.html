@@ -1,4 +1,5 @@
 <div class="cards__conatiner flex flex-wrap p-4">
+    <gmbl-loader *ngIf="!(games$ | async).length"></gmbl-loader>
     <gmbl-game-card 
         *ngFor='let game of games$ | async'
         [active]="game.active"
