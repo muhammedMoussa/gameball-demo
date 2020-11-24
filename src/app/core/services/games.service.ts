@@ -28,9 +28,9 @@ export class GamesService {
       title: 'Click & Collect',
       date: new Date(),
       text: 'It is a long established fact that a reader will be distracted by the readable eye.',
-      frubies: 5000,
-      points: 2500,
-      milestones: 3,
+      frubies: 5500,
+      points: 3600,
+      milestones: 2,
       tag: 'The Big Thing'
     },
     {
@@ -40,9 +40,9 @@ export class GamesService {
       title: 'Click & Collect',
       date: new Date(),
       text: 'It is a long established fact that a reader will be distracted by the readable eye.',
-      frubies: 5000,
-      points: 2500,
-      milestones: 3,
+      frubies: 8000,
+      points: 2400,
+      milestones: 1,
       tag: 'The Big Thing'
     },
     {
