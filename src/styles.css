@@ -3,6 +3,8 @@ li {
 }
 
 li,
+summary,
+input,
 img,
 button {
     outline: none;

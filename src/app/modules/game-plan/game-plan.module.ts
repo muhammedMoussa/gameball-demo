@@ -23,7 +23,8 @@ const routes: Routes = [
     GpLevelsComponent, 
     ChallengesComponent, 
     QuestsComponent, 
-    GpTabsComponent, GameCardComponent
+    GpTabsComponent, 
+    GameCardComponent
   ],
   imports: [
     SharedModule,

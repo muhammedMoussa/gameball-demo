@@ -94,7 +94,7 @@ export class GamesService {
   public loadGames(): void {
     setTimeout(() => {
       this.setGames(this.data);
-    }, 2000);
+    }, 500);
   }
 
   constructor() { }

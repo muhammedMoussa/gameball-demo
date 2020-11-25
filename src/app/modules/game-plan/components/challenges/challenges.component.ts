@@ -11,7 +11,7 @@ import { IGame } from 'src/app/models';
 })
 export class ChallengesComponent implements OnInit, AfterViewInit {
   games$: Observable<IGame[]>;
-
+  title = '';
 
   ngOnInit(): void {
     this.games$ = this.gamesService.getGames();
@@ -21,6 +21,9 @@ export class ChallengesComponent implements OnInit, AfterViewInit {
     this.gamesService.loadGames();
   }
 
+  createChallenge() {
+    
+  }
 
   constructor(
     private gamesService: GamesService
