@@ -9,15 +9,15 @@ export class GamePlanShellComponent implements OnInit {
   tabs = [
     {
       id: 1,
-      label: 'levels',
+      label: 'Levels',
     },
     {
       id: 2,
-      label: 'challenges',
+      label: 'Challenges',
     },
     {
       id: 3,
-      label: 'quests',
+      label: 'Quests',
     },
   ];
 

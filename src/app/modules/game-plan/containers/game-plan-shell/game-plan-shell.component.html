@@ -1,12 +1,12 @@
-<nav class="gp__tabs">
-    <ul>
-        <li 
-            *ngFor="let tab of tabs" 
-            (click)="setCurrentTab(tab.id)"
-            [class.text-blue-500]="currentTab === tab.id"
-        >{{tab.label}}</li>
-    </ul>
-</nav>
+<ul class="flex m-10">
+    <li 
+        class="mx-5 p-5"
+        *ngFor="let tab of tabs" 
+        (click)="setCurrentTab(tab.id)"
+        [class.text-blue-500]="currentTab === tab.id"
+        [class.border-b-2]="currentTab === tab.id"
+    >{{tab.label}}</li>
+</ul>
 
 <section class="">
     <gmbl-gp-levels [class.hidden]="currentTab !== 1"></gmbl-gp-levels>
